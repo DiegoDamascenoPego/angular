@@ -3,7 +3,7 @@
     <h1>Customer</h1>
   </mat-card-title>
   <mat-card-content>
-    <form [formGroup]="form" autocomplete="off" novalidate>
+    <form [formGroup]="form" autocomplete="off" novalidate (submit)="onSubmit()">
       <div class="row">
           <div class="col-md-4">
             <app-input-text name="inputName" label="Name" formControlName="name" [focused]="true"></app-input-text>
@@ -18,4 +18,4 @@
     </form>
   </mat-card-content>
 </mat-card>
-<span>{{form.get('name').value}}</span>
+<span *ngIf="customer">{{"Customer - Name: " + customer.name + " Age: " + customer.age}}</span>

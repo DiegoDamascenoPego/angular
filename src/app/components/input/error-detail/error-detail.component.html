@@ -1,17 +1,17 @@
-<mat-error *ngIf="service.hasErrorValidar(control, 'required')">Campo obrigatório</mat-error>
+<mat-error *ngIf="service.hasErrorValidar(control, 'required')">Required field</mat-error>
 
 <mat-error *ngIf="service.hasErrorValidar(control, 'min')">
-  O valor mínimo é {{service.lengthValidar(control, 'min')}}
+  The minimum value is {{service.lengthValidar(control, 'min')}}
 </mat-error>
 
 <mat-error *ngIf="service.hasErrorValidar(control, 'max')">
-  O valor máximo é {{service.lengthValidar(control, 'max')}}
+  The maximum value is {{service.lengthValidar(control, 'max')}}
 </mat-error>
 
 <mat-error *ngIf="service.hasErrorValidar(control, 'minlength')">
-    Campo precisa ter no mínimo {{service.lengthValidar(control, 'minlength')}} caracteres
+  Field must have at least {{service.lengthValidar(control, 'minlength')}} characters
 </mat-error>
 
 <mat-error *ngIf="service.hasErrorValidar(control, 'maxlength')">
-    Campo pode ter no máximo {{service.lengthValidar(control, 'maxlength')}} caracteres
+  Field can have at most {{service.lengthValidar(control, 'maxlength')}} characters
 </mat-error>
