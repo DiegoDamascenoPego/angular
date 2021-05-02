@@ -1,0 +1,27 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+table {
+  width: 100%;
+  overflow: scroll;
+}
+
+.page-center {
+  margin: 0 auto;
+  width: 50%; /* Valor da Largura */
+  height: 80%;
+}
+
+body {
+  margin-bottom:50px;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.simple-text {
+  text-align: center;
+}
+
+.text-danger{
+  color: red;
+}

@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card-title>
+    <h1>  Consultation List</h1>
+  </mat-card-title>
+  <mat-card-content>
+    <app-table
+      [dataSource]="dataSource"
+      [displayedColumns]="displayedColumns"
+      (confirm)="onConfirm($event)"
+      (edit)="onEdit($event)"
+      (delete)="onDelete($event.id, $event.nome)"
+      [pageIndex]="pageIndex"
+      [pagelength]="pagelength"
+      [pageSize]="pageSize"
+      (page)="onPesquisar(pageIndex)">
+    </app-table>
+  </mat-card-content>
+</mat-card>

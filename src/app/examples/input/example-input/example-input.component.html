@@ -1,0 +1,21 @@
+<mat-card>
+  <mat-card-title>
+    <h1>Customer</h1>
+  </mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="form" autocomplete="off" novalidate>
+      <div class="row">
+          <div class="col-md-4">
+            <app-input-text name="inputName" label="Name" formControlName="name" [focused]="true"></app-input-text>
+          </div>
+          <div class="col-md-2">
+            <app-input-number name="inputAge" label="Age" formControlName="age"></app-input-number>
+          </div>
+          <div class="col-md-2">
+            <button mat-raised-button color="primary" [disabled]="form.invalid">Confirmar</button>
+          </div>
+      </div>
+    </form>
+  </mat-card-content>
+</mat-card>
+<span>{{form.get('name').value}}</span>
