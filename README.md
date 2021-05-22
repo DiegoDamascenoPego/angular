@@ -128,3 +128,11 @@ Uma forma de estilizar o conteúdo das colunas foi disponibilizado no componente
   * W100
   * W300
   * W400
+
+
+# Component Input ControlValueAccessor
+
+O componente desenvolvido possui a finalidade de demonstrar o uso da interface ControlValueAccessor que permite a criação de componentes customizados utilizando Angular Material
+A customização realizada simplifica o uso de componente baseados em mat-form-field além de demonstrar de forma simples a integração com o componente de exibição de erros.
+
+![](input.gif)
