@@ -130,9 +130,13 @@ Uma forma de estilizar o conteúdo das colunas foi disponibilizado no componente
   * W400
 
 
-# Component Input ControlValueAccessor
+# Component Input-Text
 
 O componente desenvolvido possui a finalidade de demonstrar o uso da interface ControlValueAccessor que permite a criação de componentes customizados utilizando Angular Material
-A customização realizada simplifica o uso de componente baseados em mat-form-field além de demonstrar de forma simples a integração com o componente de exibição de erros.
+A customização realizada simplifica o uso de componente baseados em **mat-form-field** além de demonstrar de forma simples a integração com o componente de exibição de erros.
+
+### [ControlValueAccessor](https://angular.io/api/forms/ControlValueAccessor)
+
+> Define uma interface que atua como uma ponte entre a API de formulários Angular e um elemento nativo no DOM.
 
 ![](input.gif)
