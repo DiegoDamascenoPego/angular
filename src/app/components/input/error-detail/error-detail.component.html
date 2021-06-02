@@ -15,3 +15,11 @@
 <mat-error *ngIf="service.hasErrorValidar(control, 'maxlength')">
   Field can have at most {{service.lengthValidar(control, 'maxlength')}} characters
 </mat-error>
+
+<mat-error *ngIf="service.hasErrorValidar(control, 'notBlank')">
+  not Blank
+</mat-error>
+
+<mat-error *ngIf="service.hasErrorValidar(control, 'document')">
+  document invalid
+</mat-error>
